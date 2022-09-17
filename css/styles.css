@@ -1,7 +1,6 @@
 :root {
     font-size: 20px;
 }
-
 h1 {
     color: green;
     background-color: beige;
@@ -9,20 +8,40 @@ h1 {
     text-align: center;
     font-size: 3rem;
 }
+li{
+    list-style: none;
+}
+h3{
+    text-align: center;
+}
 #div_temas {
     display: none;
 }
+/* Mobile  Start*/
 
-
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    background-color: red;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background-color: aqua;
+}
 .product_cell {
     border: 2px solid blue;
     border-radius: 10px;
     padding: 10px;
-    margin: 20px;
 }
 
 .product_cell:hover {
-    border: 4px dashed red;
+    border: 2px dashed red;
     box-shadow: 0px 0px 10px red;
     cursor: grab;
 }
@@ -61,43 +80,6 @@ h1 {
     color: aquamarine;
 }
 
-/* Estilos para el formulario */
-.div_form {
-    width: 400px;
-    margin: 20px auto;
-}
-
-.div_form > form > input {
-    height: 40px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    width: 70%;
-    font-size: 20px;
-    padding-left: 20px;
-    outline: none;
-}
-
-.div_form > form > input:focus {
-    border: 2px solid blue;
-}
-
-.div_form > form > button {
-    height: 40px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    width: 28%;
-    outline: none;
-}
-.div_form > form > button:hover {
-    background-color: #666;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-}
-.div_form > form > button:focus {
-    border: 2px solid red;
-}
-
 /* Pseudo-elementos */
 .price::before {
     content: "$ ";
@@ -107,3 +89,45 @@ h1 {
     content: ".00";
     font-size: 12px;
 }
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile End */
+
+/* Medium Start*/
+@media (min-width: 600px){
+    .products{
+        width: 550px;
+    }
+    .menu{
+        margin-bottom: 20px;
+    }
+    .menu ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+}
+/* Medium End */
+              
+/* Large Start*/
+@media (min-width: 900px){
+    .products{
+        width: 800px;
+    }
+    .menu{
+        margin-bottom: 20px;
+    }
+    .menu ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+}
+
+/* Large End */
