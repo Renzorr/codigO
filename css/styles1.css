@@ -132,8 +132,8 @@ body{
   outline: none;
   font-size: 15px;
   border: none;
-  border-bottom: 5px solid #7e7e7e;
-  color: #7e7e7e;
+  border-bottom: 5px solid #333333;
+  color: #333333;
 }
 .div_form input::placeholder {
   color: #7e7e7e;

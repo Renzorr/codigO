@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background-color: rgb(29, 28, 28);
+}
+h1 {
+    font-size: 57px;
+    color: #9dff00;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 0px 0px 0 rgb(138,236,0),
+                 1px 1px 0 rgb(120,218,0),
+                 2px 2px 0 rgb(101,199,0),
+                 3px 3px 0 rgb(82,180,0),
+                 4px 4px 0 rgb(64,162,0),
+                 5px 5px 0 rgb(45,143,0),
+                 6px 6px 0 rgb(26,124,0),
+                 7px 7px 0 rgb(7,105,0),
+                 8px 8px 0 rgb(-11,87,0),
+                 9px 9px 0 rgb(-30,68,0),
+                 10px 10px  0 rgb(-49,49,0),
+                 11px 11px 10px rgba(0,0,0,0),
+                 11px 11px 1px rgba(0,0,0,0.5),
+                 0px 0px 10px rgba(0,0,0,.2);
+  animation-duration: 5s;
+  animation-name: screen-saver;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  transition: .4s;
+}
+
+@keyframes screen-saver{
+    0%{
+        transform: translate(100%, 10%);
+        scale: 1.3;
+    }
+    10%{
+        transform: translateX(60%);
+        scale: 1.4;
+    }
+    30%{
+        transform: translateY(90%);
+        scale: 1.7;
+    }
+    50%{
+        transform: translateX(-70%);
+        scale: 1.3;
+    }
+    70%{
+        transform: translateY(-50%);
+        scale: 1.1;
+    }
+    100%{
+        transform: translate(-110%, 10%);
+        scale: 1.4;
+    }
+}
+
+
+
+
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  background-color: gray;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  margin: -25px 0 0 -25px;
+  transition: 1s;
+}
+.container:hover {
+  cursor: pointer;
+  scale: 1.05;
+}
+p {
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 600;
+  /* Animation parts */
+  animation-duration: 3s;
+  /* Name an animation */
+  animation-name: firstAnimation;
+  /* Times we want the animation to repeat */
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+/* Linking our animation */
+@keyframes firstAnimation {
+  /* Animation starts */
+  from {
+    margin-top: 100%;
+    opacity: 0;
+  }
+  /* Animtaion ends */
+  to {
+    opacity: 1;
+  }
+}
