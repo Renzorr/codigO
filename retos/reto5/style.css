@@ -1,0 +1,115 @@
+:root{
+--White: hsl(0, 0%, 100%);
+--Verylightgrayishblue: hsl(210, 60%, 98%);
+--Lightgrayishblue1: hsl(211, 68%, 94%);
+--Lightgrayishblue2: hsl(205, 33%, 90%);
+--Grayishblue: hsl(219, 14%, 63%);
+--Darkgrayishblue: hsl(219, 12%, 42%);
+--Verydarkblue: hsl(224, 21%, 14%);
+--Blue: hsl(219, 85%, 26%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: hsl(210, 60%, 98%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.grid-container {
+  max-width: 400px;
+  height: 500px;
+  margin: 20px;
+  border-radius: 25px;
+  background-color: var(--White);
+  box-shadow: 5px 10px 15px rgb(228, 227, 227);
+}
+header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding: 15px 20px;
+}
+.title {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 8px;
+}
+.title h1 {
+  font-size: 22px;
+}
+.title span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--White);
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  background-color: var(--Blue);
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 0 18px;
+}
+header a {
+  text-align: end;
+  text-decoration: none;
+  font-size: 13px;
+  transition: .3s;
+  color: var(--Grayishblue);
+}
+header a:hover{
+  color: var(--Blue);
+}
+main{
+  margin-top: 15px;
+  padding: 0 15px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, 65px)
+}
+.message{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-radius: 15px;
+  background-color: hsl(211, 68%, 94%);
+  padding: 7px 20px;
+}
+.message img{
+  width: 30px;
+}
+.message p{
+  font-size: 13px;
+  color: var(--Grayishblue);
+}
+.message .name{
+  color: hsl(224, 21%, 14%);
+  font-weight: 600;
+}
+.message .motivo, .motivo-jacob{
+  color: hsl(219, 85%, 26%);
+}
+.message .motivo{
+  color: var(--Verydarkblue);
+}
+.message h5{
+  color: var(--Grayishblue);
+  font-weight: 500;
+}
+.motivo-jacob{
+  font-weight: bold;
+}
+@media (min-width: 600px) {
+  .grid-container {
+    min-width: 600px;
+  }
+}

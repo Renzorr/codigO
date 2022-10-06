@@ -1,0 +1,25 @@
+html{
+    font-size: 15px;
+}
+
+button{
+    margin-block: 2rem .1rem;
+    padding: .5rem 2rem;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: .3rem;
+    font-size: 1.1rem;
+    transition: .3s;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: .2rem .3rem .2rem  rgb(173, 173, 173);
+}
+
+.clicked {
+  font-size: 2em;
+  background-color: aqua;
+}
+
